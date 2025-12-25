@@ -15,6 +15,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
         screen.fill("black")
+        cplay.update(dt)
         cplay.draw(screen)
         pygame.display.flip()
         dt=clock.tick(60)
